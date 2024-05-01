@@ -1,0 +1,64 @@
+/* General body and layout settings */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, readable font */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #444444; /* Dark grey background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0; /* Padding above and below the text */
+}
+
+/* Content area styling */
+.content {
+    display: flex;
+    flex: 1; /* Allows the content area to grow and fill available space */
+    padding: 20px; /* Spacing around the content */
+    align-items: start; /* Aligns items at the top */
+}
+
+main {
+    flex: 3; /* Takes up more space than the sidebar */
+    padding-right: 20px; /* Space between main content and sidebar */
+}
+
+/* Sidebar for upcoming events */
+.events {
+    flex: 1; /* Sidebar takes less space than main content */
+    background-color: #f8f8f8; /* Light grey background */
+    padding: 15px;
+    border-left: 2px solid #ccc; /* Subtle line between main content and sidebar */
+}
+
+/* Styling for headings and subheadings in the sidebar */
+.events h2, .events h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #333; /* Dark grey color for text */
+}
+
+/* Footer styling */
+footer {
+    background-color: #222; /* Darker grey background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0; /* Padding above and below the text */
+}
+
+/* Ensuring links are visually distinct */
+a {
+    color: #06f; /* Bright blue color for links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better usability */
+}
+
